@@ -1187,6 +1187,127 @@ marker109.bindPopup(`
   </div>
 `);
 
+const marker110 = L.marker(map.unproject([8244, 6083], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker110.bindPopup(`
+  <div class="popup-content">
+    <img src="game/first base.png" alt="Game Location 110" />
+    <p>First Base Parking Garage</p>
+    <img src="real/first base.png" alt="Real Location 110" />
+    <p>1502 NW 4th St, Miami, FL 33125, USA</p>
+  </div>
+`);
+
+const marker111 = L.marker(map.unproject([8309, 6133], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker111.bindPopup(`
+  <div class="popup-content">
+    <img src="game/palace cafe.png" alt="Game Location 111" />
+    <p>Palace Cafe & Dairy</p>
+    <img src="real/palace cafe.png" alt="Real Location 111" />
+    <p>1300 NW 7th St, Miami, FL 33125, United States</p>
+  </div>
+`);
+
+const marker112 = L.marker(map.unproject([8302, 6100], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker112.bindPopup(`
+  <div class="popup-content">
+    <img src="game/8393 sw.png" alt="Game Location 112" />
+    <p>Family Resort Centre</p>
+    <img src="real/8393 sw.png" alt="Real Location 112" />
+    <p>1393 SW 1st St, Miami, FL 33135, USA</p>
+  </div>
+`);
+
+const marker113 = L.marker(map.unproject([8114, 6108], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker113.bindPopup(`
+  <div class="popup-content">
+    <img src="game/loan depot.png" alt="Game Location 113" />
+    <p>LoanDepot Park</p>
+    <img src="real/marker113.png" alt="Real Location 113" />
+    <p>501 Marlins Way, Miami, FL 33125, United States</p>
+  </div>
+`);
+
+const marker114 = L.marker(map.unproject([8304, 6173], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker114.bindPopup(`
+  <div class="popup-content">
+    <img src="game/martin fine.png" alt="Game Location 114" />
+    <p>Martin Fine Villa</p>
+    <img src="real/martin fine.png" alt="Real Location 114" />
+    <p>780 NW 13th Ct, Miami, FL 33125, United States</p>
+  </div>
+`);
+
+const marker115 = L.marker(map.unproject([8299, 6355], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker115.bindPopup(`
+  <div class="popup-content">
+    <img src="game/venture apts.png" alt="Game Location 115" />
+    <p>Venture Apartments</p>
+    <img src="real/venture apts.png" alt="Real Location 115" />
+    <p>800 NW 13th Ave, Miami, FL 33125, USA</p>
+  </div>
+`);
+
+const marker116 = L.marker(map.unproject([8267, 6276], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker116.bindPopup(`
+  <div class="popup-content">
+    <img src="game/miami pd.png" alt="Game Location 116" />
+    <p>Rockridge Community Center</p>
+    <img src="real/miami pd.png" alt="Real Location 116" />
+    <p>2-40 Beacom Blvd, Miami, FL 33135, United States</p>
+  </div>
+`);
+
+const marker117 = L.marker(map.unproject([8194, 6195], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker117.bindPopup(`
+  <div class="popup-content">
+    <img src="game/state office.png" alt="Game Location 117" />
+    <p>Miami Dade State Office</p>
+    <img src="real/state office.png" alt="Real Location 117" />
+    <p>1350 NW 12th Ave, Miami, FL 33136, United States</p>
+  </div>
+`);
+
+const marker118 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker118.bindPopup(`
+  <div class="popup-content">
+    <img src="game/marker118.png" alt="Game Location 118" />
+    <p>Game Location 118</p>
+    <img src="real/marker118.png" alt="Real Location 118" />
+    <p>Real Location 118</p>
+  </div>
+`);
+
+const marker119 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker119.bindPopup(`
+  <div class="popup-content">
+    <img src="game/marker119.png" alt="Game Location 119" />
+    <p>Game Location 119</p>
+    <img src="real/marker119.png" alt="Real Location 119" />
+    <p>Real Location 119</p>
+  </div>
+`);
+
+const marker120 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker120.bindPopup(`
+  <div class="popup-content">
+    <img src="game/marker120.png" alt="Game Location 120" />
+    <p>Game Location 120</p>
+    <img src="real/marker120.png" alt="Real Location 120" />
+    <p>Real Location 120</p>
+  </div>
+`);
+
+const marker121 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker121.bindPopup(`
+  <div class="popup-content">
+    <img src="game/marker121.png" alt="Game Location 121" />
+    <p>Game Location 121</p>
+    <img src="real/marker121.png" alt="Real Location 121" />
+    <p>Real Location 121</p>
+  </div>
+`);
+
+
 map.eachLayer(function (layer) {
   if (layer instanceof L.Marker) {
     layer.on('click', function (e) {
