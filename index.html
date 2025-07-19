@@ -108,18 +108,14 @@
 
 
   const marker1 = L.marker(map.unproject([6058, 4763], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
-  marker.bindPopup(`
-  <div class="popup-content">
-    <img src="game/island arts.png" alt="Game Location 25" />
-    <p>Island Arts</p>
-    <img src="real/island arts.png" alt="Real Location 25" />
-    <p>
-      <a href="https://www.google.com/maps/place/471+Dock+St,+Cedar+Key,+FL+32625,+USA/@29.1346292,-83.0308149,3a,75y,353.95h,88.45t/data=!3m8!1e1!3m6!1suxBKpw9ezd5T9H9Idbrg8w!2e0!5s20110501T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D1.5528804844406778%26panoid%3DuxBKpw9ezd5T9H9Idbrg8w%26yaw%3D353.94886214748095!7i13312!8i6656!4m6!3m5!1s0x88e9aed72ce4ef4b:0x2221c0f03f8801ef!8m2!3d29.1347572!4d-83.0308719!16s%2Fg%2F11bw3yf39q?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-        471 Dock St, Cedar Key, FL 32625, United States
-      </a>
-    </p>
-  </div>
-`);
+  marker1.bindPopup(`
+    <div class="popup-content">
+      <img src="game/starlet motel.png" alt="Starlet Motel" />
+	  <p>S2/51 Starlet Motel</p>
+      <img src="real/ecconomy inn.png" alt="Economy Inn" />
+	  <p>23750 US-301, Lawtey, FL 32058, United States</p>
+    </div>
+  `);
 
   const marker2 = L.marker(map.unproject([6080, 4692], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
   marker2.bindPopup(`
@@ -341,15 +337,21 @@ marker24.bindPopup(`
   </div>
 `);
 
-const marker25 = L.marker(map.unproject([5828, 8757], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+const marker25 = L.marker(map.unproject([6089, 8676], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+
 marker25.bindPopup(`
   <div class="popup-content">
     <img src="game/island arts.png" alt="Game Location 25" />
     <p>Island Arts</p>
     <img src="real/island arts.png" alt="Real Location 25" />
-    <p>471 Dock St, Cedar Key, FL 32625, United States</p>
+    <p>
+      <a href="https://www.google.com/maps/@29.1346292,-83.0308149,3a,75y,357.77h,82.35t/data=!3m8!1e1!3m6!1suxBKpw9ezd5T9H9Idbrg8w!2e0!5s20110501T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D7.646878987842186%26panoid%3DuxBKpw9ezd5T9H9Idbrg8w%26yaw%3D357.76775691533084!7i13312!8i6656?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"_blank" rel="noopener noreferrer">
+        471 Dock St, Cedar Key, FL 32625, United States
+      </a>
+    </p>
   </div>
 `);
+
 
 const marker26 = L.marker(map.unproject([5776, 8729], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
 marker26.bindPopup(`
