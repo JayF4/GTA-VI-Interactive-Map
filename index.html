@@ -1346,6 +1346,36 @@ const marker125 = L.marker(map.unproject([9214, 6064], map.getMaxZoom() - 1), { 
 	  <p>1000 Venetian Way, Miami Beach, FL 33139, United States</p>
     </div>
   `);
+
+const marker126 = L.marker(map.unproject([7581, 6712], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker126.bindPopup(`
+    <div class="popup-content">
+      <img src="game/signiture mia.png" alt="Game Location" />
+	  <p>Signature Aviation MIA</p>
+      <img src="real/signiture mia.png" alt="real Location" />
+	  <p>5700 NW 36th St, Miami, FL 33122, United States</p>
+    </div>
+  `);
+
+const marker127 = L.marker(map.unproject([10181, 6150], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker127.bindPopup(`
+    <div class="popup-content">
+      <img src="game/1500 ocean.png" alt="Game Location" />
+	  <p>1500 Ocean Dr</p>
+      <img src="real/1500 ocean.png" alt="Real Location" />
+	  <p>1500 Ocean Dr #100, Miami Beach, FL 33139, United States</p>
+    </div>
+  `);  
+  
+  const marker128 = L.marker(map.unproject([test, test], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker128.bindPopup(`
+    <div class="popup-content">
+      <img src="game/royal palm.png" alt="Game Location" />
+	  <p>Bayfront Heights</p>
+      <img src="real/royal palm.png" alt="Real Location" />
+	  <p>1545 Collins Ave, Miami Beach, FL 33139, United States</p>
+    </div>
+  `);  
 	
 map.eachLayer(function (layer) {
   if (layer instanceof L.Marker) {
