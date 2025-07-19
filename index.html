@@ -1362,10 +1362,11 @@ map.eachLayer(function (layer) {
     layer.on('click', function (e) {
       const target = map.latLngToContainerPoint(e.latlng);
 
-      // Adjust to move marker toward bottom-center
-      const offset = L.point(0, -window.innerHeight / 4);
+      // Adjust to move marker toward the bottom-center of the screen
+      const centerX = window.innerWidth / 2;
+      const centerY = window.innerHeight * 0.8; // 80% down the viewport
 
-      const newPoint = target.add(offset);
+      const newPoint = L.point(centerX, centerY);
       const newLatLng = map.containerPointToLatLng(newPoint);
 
       map.panTo(newLatLng, { animate: true });
@@ -1373,7 +1374,7 @@ map.eachLayer(function (layer) {
       // Open popup manually after panning
       setTimeout(() => {
         layer.openPopup();
-      }, 50); // small delay to wait for pan animation
+      }, 200); // Allow time for animation
     });
   }
 });
