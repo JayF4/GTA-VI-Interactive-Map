@@ -1267,37 +1267,57 @@ marker117.bindPopup(`
   </div>
 `);
 
-const marker118 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+const marker118 = L.marker(map.unproject([8776, 5730], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
 marker118.bindPopup(`
   <div class="popup-content">
-    <img src="game/marker118.png" alt="Game Location 118" />
-    <p>Game Location 118</p>
-    <img src="real/marker118.png" alt="Real Location 118" />
-    <p>Real Location 118</p>
+    <img src="game/2451 nw.png" alt="Game Location 118" />
+    <p>ARCHEZ footwear and clothing</p>
+    <img src="real/2451 nw.png" alt="Real Location 118" />
+    <p>2451 NW 5th Ave, Miami, FL 33127, USA</p>
   </div>
 `);
 
 const marker119 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
 marker119.bindPopup(`
   <div class="popup-content">
-    <img src="game/marker119.png" alt="Game Location 119" />
-    <p>Game Location 119</p>
-    <img src="real/marker119.png" alt="Real Location 119" />
-    <p>Real Location 119</p>
+    <img src="game/2401 nw.png" alt="Game Location 119" />
+    <p>Fiesta Showroom</p>
+    <img src="real/2401 nw.png" alt="Real Location 119" />
+    <p>2401 NW 5th Ave, Miami, FL 33127, United States</p>
   </div>
 `);
 
-const marker120 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+const marker120 = L.marker(map.unproject([8830, 5726], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
 marker120.bindPopup(`
   <div class="popup-content">
-    <img src="game/marker120.png" alt="Game Location 120" />
-    <p>Game Location 120</p>
-    <img src="real/marker120.png" alt="Real Location 120" />
-    <p>Real Location 120</p>
+    <img src="game/wynwood walls.png" alt="Game Location 120" />
+    <p>Wynwood Walls</p>
+    <img src="real/wynwood walls.png" alt="Real Location 120" />
+    <p>2516 NW 2nd Ave, Miami, FL 33127, United States</p>
   </div>
 `);
 
-const marker121 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+const marker121 = L.marker(map.unproject([8947, 5696], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker121.bindPopup(`
+  <div class="popup-content">
+    <img src="game/295 nw.png" alt="Game Location 121" />
+    <p>Wynwood Bakery</p>
+    <img src="real/295 nw.png" alt="Real Location 121" />
+    <p>295 NW 26th St, Miami, FL 33127, USA</p>
+  </div>
+`);
+	
+const marker122 = L.marker(map.unproject([8812, 5674], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker121.bindPopup(`
+  <div class="popup-content">
+    <img src="game/2601 nw.png" alt="Game Location 121" />
+    <p>GWynwood Diner</p>
+    <img src="real/2601 nw.png" alt="Real Location 121" />
+    <p>2601 NW 2nd Ave, Miami, FL 33127, USA</p>
+  </div>
+`);
+
+	const marker123 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
 marker121.bindPopup(`
   <div class="popup-content">
     <img src="game/marker121.png" alt="Game Location 121" />
@@ -1307,7 +1327,36 @@ marker121.bindPopup(`
   </div>
 `);
 
+const marker124 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker121.bindPopup(`
+  <div class="popup-content">
+    <img src="game/marker121.png" alt="Game Location 121" />
+    <p>Game Location 121</p>
+    <img src="real/marker121.png" alt="Real Location 121" />
+    <p>Real Location 121</p>
+  </div>
+`);
 
+const marker125 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker121.bindPopup(`
+  <div class="popup-content">
+    <img src="game/marker121.png" alt="Game Location 121" />
+    <p>Game Location 121</p>
+    <img src="real/marker121.png" alt="Real Location 121" />
+    <p>Real Location 121</p>
+  </div>
+`);
+	
+const marker126 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+marker121.bindPopup(`
+  <div class="popup-content">
+    <img src="game/marker121.png" alt="Game Location 121" />
+    <p>Game Location 121</p>
+    <img src="real/marker121.png" alt="Real Location 121" />
+    <p>Real Location 121</p>
+  </div>
+`);
+	
 map.eachLayer(function (layer) {
   if (layer instanceof L.Marker) {
     layer.on('click', function (e) {
