@@ -1360,21 +1360,22 @@ marker121.bindPopup(`
 map.eachLayer(function (layer) {
   if (layer instanceof L.Marker) {
     layer.on('click', function (e) {
-      const target = map.latLngToContainerPoint(e.latlng);
+      const markerPoint = map.latLngToContainerPoint(e.latlng);
 
-      // Adjust to move marker toward the bottom-center of the screen
-      const centerX = window.innerWidth / 2;
-      const centerY = window.innerHeight * 0.8; // 80% down the viewport
+      // Desired screen position: bottom-center (e.g., 80% down the height)
+      const desiredPoint = L.point(window.innerWidth / 2, window.innerHeight * 0.8);
 
-      const newPoint = L.point(centerX, centerY);
-      const newLatLng = map.containerPointToLatLng(newPoint);
+      // Calculate the offset needed to move the marker to the desired point
+      const offset = markerPoint.subtract(desiredPoint);
 
-      map.panTo(newLatLng, { animate: true });
+      // Convert offset back to lat/lng and pan
+      const targetLatLng = map.containerPointToLatLng(markerPoint.subtract(offset));
+      map.panTo(targetLatLng, { animate: true });
 
-      // Open popup manually after panning
+      // Open popup after short delay
       setTimeout(() => {
         layer.openPopup();
-      }, 200); // Allow time for animation
+      }, 200);
     });
   }
 });
