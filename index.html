@@ -1616,7 +1616,57 @@ const marker147 = L.marker(map.unproject([9731, 6467], map.getMaxZoom() - 1), { 
 	  <p>1530 Washington Ave, Miami Beach, FL 33139, United States</p>
     </div>
   `); 
-  	
+
+ const marker153 = L.marker(map.unproject([8938, 7687], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker153.bindPopup(`
+    <div class="popup-content">
+      <img src="game/tennis.png" alt="Game Location" />
+	  <p>Crandon Park Tennis Center</p>
+      <img src="real/tennis.png" alt="Real Location" />
+	  <p>7300 Crandon Blvd, Key Biscayne, FL 33149, United States</p>
+    </div>
+  `); 
+
+const marker154 = L.marker(map.unproject([9230, 6503], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker154.bindPopup(`
+    <div class="popup-content">
+      <img src="game/jungle gift.png" alt="Game Location" />
+	  <p>Jungle Island Gift Shop</p>
+      <img src="real/jungle gift.png" alt="Real Location" />
+	  <p>1111 Parrot Jungle Trail, Miami, FL 33132, United States</p>
+    </div>
+  `); 
+
+const marker155 = L.marker(map.unproject([8362, 6004], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker155.bindPopup(`
+    <div class="popup-content">
+      <img src="game/5960 ne.png" alt="Game Location" />
+	  <p>5960 NE 2nd AVE</p>
+      <img src="real/5960 ne.png" alt="Real Location" />
+	  <p>5960 NE 2nd AVE</p>
+    </div>
+  `); 
+
+const marker156 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker156.bindPopup(`
+    <div class="popup-content">
+      <img src="game/test.png" alt="Game Location" />
+	  <p>test</p>
+      <img src="real/test.png" alt="Real Location" />
+	  <p>test</p>
+    </div>
+  `); 
+
+const marker157 = L.marker(map.unproject([0, 0], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker157.bindPopup(`
+    <div class="popup-content">
+      <img src="game/test.png" alt="Game Location" />
+	  <p>test</p>
+      <img src="real/test.png" alt="Real Location" />
+	  <p>test</p>
+    </div>
+  `); 
+	
 map.eachLayer(function (layer) {
   if (layer instanceof L.Marker) {
     layer.on('click', function (e) {
