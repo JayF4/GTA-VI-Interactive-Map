@@ -1441,7 +1441,7 @@ const marker127 = L.marker(map.unproject([10181, 6150], map.getMaxZoom() - 1), {
   marker135.bindPopup(`
     <div class="popup-content">
       <img src="game/hotel victor.png" alt="Game Location" />
-	  <p>Hotel Victor</p>
+	  <p>Hotel Dixon</p>
       <img src="real/hotel victor.png" alt="Real Location" />
 	  <p>1144 Ocean Dr, Miami Beach, FL 33139, United States</p>
     </div>
@@ -1472,7 +1472,7 @@ const marker127 = L.marker(map.unproject([10181, 6150], map.getMaxZoom() - 1), {
     <div class="popup-content">
       <img src="game/101 ocean.png" alt="Game Location" />
 	  <p>Hilton Bentley</p>
-      <img src="real/ocean dr.png" alt="Real Location" />
+      <img src="real/101 ocean.png" alt="Real Location" />
 	  <p>101 Ocean Dr, Miami Beach, FL 33139, USA</p>
     </div>
   `); 
@@ -1512,7 +1512,7 @@ const marker127 = L.marker(map.unproject([10181, 6150], map.getMaxZoom() - 1), {
     <div class="popup-content">
       <img src="game/winter.png" alt="Game Location" />
 	  <p>Winter Haven Hotel</p>
-      <img src="real/test.png" alt="Real Location" />
+      <img src="real/winter.png" alt="Real Location" />
 	  <p>1400 Ocean Dr, Miami Beach, FL 33139, United States</p>
     </div>
   `); 
@@ -1537,6 +1537,85 @@ const marker127 = L.marker(map.unproject([10181, 6150], map.getMaxZoom() - 1), {
     </div>
   `); 
 
+  const marker145 = L.marker(map.unproject([9848, 6637], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker145.bindPopup(`
+    <div class="popup-content">
+      <img src="game/icon.png" alt="Game Location" />
+	  <p>Icon Condo</p>
+      <img src="real/icon.png" alt="Real Location" />
+	  <p>450 Alton Rd, Miami Beach, FL 33139, United States</p>
+    </div>
+  `); 
+
+  const marker146 = L.marker(map.unproject([9784, 6540], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker146.bindPopup(`
+    <div class="popup-content">
+      <img src="game/bentley bay.png" alt="Game Location" />
+	  <p>Bentley Bay Condo</p>
+      <img src="real/bentley bay.png" alt="Real Location" />
+	  <p>520-540 West Ave, Miami Beach, FL 33139, United States</p>
+    </div>
+  `); 
+
+const marker147 = L.marker(map.unproject([9731, 6467], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker147.bindPopup(`
+    <div class="popup-content">
+      <img src="game/floridian.png" alt="Game Location" />
+	  <p>The Floridian Condo</p>
+      <img src="real/floridian.png" alt="Real Location" />
+	  <p>650 West Ave, Miami Beach, FL 33139, United States</p>
+    </div>
+  `); 
+
+  const marker148 = L.marker(map.unproject([9721, 6374], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker148.bindPopup(`
+    <div class="popup-content">
+      <img src="game/waverly.png" alt="Game Location" />
+	  <p>The Waverly</p>
+      <img src="real/waverly.png" alt="Real Location" />
+	  <p>1330 West Ave, Miami Beach, FL 33139, United States</p>
+    </div>
+  `); 
+
+  const marker149 = L.marker(map.unproject([9775, 6175], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker149.bindPopup(`
+    <div class="popup-content">
+      <img src="game/flamingo.png" alt="Game Location" />
+	  <p>Flamingo Point</p>
+      <img src="real/flamingo.png" alt="Real Location" />
+	  <p>1504 Bay Rd, Miami Beach, FL 33139, United States</p>
+    </div>
+  `); 
+
+ const marker150 = L.marker(map.unproject([10018, 6815], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker150.bindPopup(`
+    <div class="popup-content">
+      <img src="game/portofino.png" alt="Game Location" />
+	  <p>Portofino Tower</p>
+      <img src="real/portofino.png" alt="Real Location" />
+	  <p>South Pointe Dr, Miami Beach, FL 33139, United States</p>
+    </div>
+  `); 
+
+ const marker151 = L.marker(map.unproject([9854, 6697], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker151.bindPopup(`
+    <div class="popup-content">
+      <img src="game/murano.png" alt="Game Location" />
+	  <p>Murano Grande</p>
+      <img src="real/murano.png" alt="Real Location" />
+	  <p>400 Alton Rd, Miami Beach, FL 33139, United States</p>
+    </div>
+  `); 
+
+ const marker152 = L.marker(map.unproject([9992, 6112], map.getMaxZoom() - 1), { icon: redCircle }).addTo(map);
+  marker152.bindPopup(`
+    <div class="popup-content">
+      <img src="game/courtyard.png" alt="Game Location" />
+	  <p>Courtyard Miami Beach South Beach</p>
+      <img src="real/courtyard.png" alt="Real Location" />
+	  <p>1530 Washington Ave, Miami Beach, FL 33139, United States</p>
+    </div>
+  `); 
   	
 map.eachLayer(function (layer) {
   if (layer instanceof L.Marker) {
